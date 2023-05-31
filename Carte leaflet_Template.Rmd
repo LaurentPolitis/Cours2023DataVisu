@@ -1,0 +1,62 @@
+---
+title: "RMD_empty"
+author: "You"
+date: "3/27/2020"
+output: html_document
+---
+
+## R Markdown
+
+Nous allons éditer un petit rapport Rmarkdown. Il suffit d'appuyer sur le bouton **Knit** (barre de menu de Rstudio) pour créer un document HTML, pdf ou Word. Si la compilation est bonne (pas d'erreur de code), vous aurez un beau rapport. Vous pouvez créer à tout moment un nouveau rapport via File > New File > R Markdown.
+
+## Resultats de l'étude {.tabset}
+
+### Carte des stations étudiées
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(leaflet) # Package à installer si ce n'est pas déjà fait.
+source("~/../Desktop/ESSCA/2020-2021/Cours/Cours 2/TD 2 - Annexe.R") # A récupérer sur Teams. Chemin à changer.
+# source("C:/Users/N0376151/OneDrive - Liberty Mutual/Desktop/ESSCA/2020-2021/Cours/Cours 2/TD 2 - Annexe.R")
+
+
+```
+
+### Températures
+
+Voici les séries de température pour ces trois stations sur l'année 2018 :
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+
+
+```
+
+### Précipitations
+
+Voici les séries de précipitation pour ces trois stations sur l'année 2018 :
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+
+
+```
+
+### Bilan
+
+**Voici quelques chiffres sur les températures aux 3 stations sélectionnées :**
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(DT)
+
+```
+
+
+**Et enfin les chiffres sur la précipitation aux 3 stations sélectionnées :**
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+library(DT)
+
+```
